@@ -1,0 +1,270 @@
+export const COMPANY = {
+  name: 'TERAIT Technologies',
+  fullName: 'TERAIT Technologies Pvt Ltd',
+  tagline: 'Enterprise IT Infrastructure & Security Solutions',
+  description: 'Modern scalable IT, CCTV, cloud, networking, and managed enterprise solutions for next-generation businesses.',
+  phone: '+91 9986024067',
+  email: 'info@teraittech.com',
+  whatsapp: '919986024067',
+  website: 'https://teraittech.com',
+  linkedin: 'https://www.linkedin.com/company/terait-technologies-pvt-ltd',
+  address: {
+    head: '#24, 100 Feet Road, Banaswadi, Bangalore - 560043',
+    branch1: '#384/99/3 Above SBI Bank, Virgonagar Post, Avalahalli, Bangalore - 560049',
+    branch2: '#107, 1st Main Road, Bhuvaneshwari Nagar, R.T. Nagar Post, Bangalore - 560032',
+  },
+}
+export const OFFICE_LOCATIONS = [
+  {
+    type: 'Head Office',
+    city: 'Bangalore',
+    title: 'Bangalore Head Office',
+    address: '#24, 100 Feet Road, Banaswadi, Bangalore - 560043',
+    phone: '+91 9986024067',
+    email: 'info@teraittech.com',
+    mapQuery: '#24, 100 Feet Road, Banaswadi, Bangalore 560043',
+    showMap: true,
+  },
+  {
+    type: 'Branch Office',
+    city: 'Bangalore',
+    title: 'Bangalore Branch Office',
+    address: '#384/99/3 Above SBI Bank, Virgonagar Post, Avalahalli, Bangalore - 560049',
+    phone: '+91 9986024067',
+    email: 'info@teraittech.com',
+    mapQuery: '#384/99/3 Above SBI Bank, Virgonagar Post, Avalahalli, Bangalore 560049',
+  },
+  {
+    type: 'Branch Office',
+    city: 'Bangalore',
+    title: 'Bangalore Branch Office',
+    address: '#107, 1st Main Road, Bhuvaneshwari Nagar, R.T. Nagar Post, Bangalore - 560032',
+    phone: '+91 9986024067',
+    email: 'info@teraittech.com',
+    mapQuery: '#107, 1st Main Road, Bhuvaneshwari Nagar, RT Nagar Post, Bangalore 560032',
+  },
+  {
+    type: 'Office',
+    city: 'Chennai',
+    title: 'Chennai Office',
+    address: 'No:4, PU.Shanmugham Nagar, Kolathur, Chennai, Tamil Nadu 600099',
+    phone: '+91 9986024067',
+    email: 'info@teraittech.com',
+    mapQuery: 'No 4 PU Shanmugham Nagar Kolathur Chennai Tamil Nadu 600099',
+  },
+  {
+    type: 'Office',
+    city: 'USA',
+    title: 'USA Office',
+    address: '1968 S. Coast Hwy #539, Laguna Beach, CA 92651',
+    phone: '+1 949-281-1168',
+    email: 'info@teraittech.com',
+    mapQuery: '1968 S Coast Hwy 539 Laguna Beach CA 92651',
+  },
+]
+
+export const STATS = [
+  { value: '500+', label: 'Projects Delivered' },
+  { value: '200+', label: 'Enterprise Clients' },
+  { value: '15+', label: 'Years Experience' },
+  { value: '98%', label: 'Client Retention' },
+]
+
+export const SERVICES = [
+  {
+    id: 'cctv',
+    icon: 'Camera',
+    title: 'CCTV Surveillance',
+    short: 'AI-powered surveillance systems with remote monitoring and smart analytics.',
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
+    id: 'managed-it',
+    icon: 'Settings',
+    title: 'Managed IT Services',
+    short: 'End-to-end IT management, monitoring, and proactive support for enterprises.',
+    color: 'from-purple-500 to-blue-500',
+  },
+  {
+    id: 'networking',
+    icon: 'Network',
+    title: 'Networking Solutions',
+    short: 'Structured cabling, LAN/WAN, SD-WAN, and enterprise network design.',
+    color: 'from-cyan-500 to-teal-500',
+  },
+  {
+    id: 'cloud',
+    icon: 'Cloud',
+    title: 'Cloud Infrastructure',
+    short: 'AWS, Azure, GCP cloud architecture, migration, and optimization.',
+    color: 'from-sky-500 to-blue-600',
+  },
+  {
+    id: 'server',
+    icon: 'Server',
+    title: 'Server Management',
+    short: 'On-premise and hybrid server deployment, monitoring, and maintenance.',
+    color: 'from-indigo-500 to-purple-500',
+  },
+  {
+    id: 'cybersecurity',
+    icon: 'Shield',
+    title: 'Cybersecurity',
+    short: 'Threat detection, firewall management, endpoint security, and compliance.',
+    color: 'from-red-500 to-orange-500',
+  },
+  {
+    id: 'datacenter',
+    icon: 'Database',
+    title: 'Data Center Solutions',
+    short: 'Complete data center design, build, operate, and optimize services.',
+    color: 'from-green-500 to-emerald-500',
+  },
+  {
+    id: 'amc',
+    icon: 'Wrench',
+    title: 'IT AMC',
+    short: 'Comprehensive Annual Maintenance Contracts for all IT infrastructure.',
+    color: 'from-yellow-500 to-orange-500',
+  },
+  {
+    id: 'smartclass',
+    icon: 'Monitor',
+    title: 'Smart Classroom',
+    short: 'Interactive panels, AV solutions, and digital learning infrastructure.',
+    color: 'from-pink-500 to-rose-500',
+  },
+  {
+    id: 'biometric',
+    icon: 'Fingerprint',
+    title: 'Biometric Systems',
+    short: 'Access control, attendance systems, and identity verification solutions.',
+    color: 'from-teal-500 to-cyan-600',
+  },
+  {
+    id: 'disaster',
+    icon: 'RefreshCw',
+    title: 'Disaster Recovery',
+    short: 'Business continuity planning, backup strategies, and rapid recovery systems.',
+    color: 'from-orange-500 to-red-500',
+  },
+  {
+    id: 'av',
+    icon: 'Tv',
+    title: 'AV Solutions',
+    short: 'Conference room AV, digital signage, and presentation systems.',
+    color: 'from-violet-500 to-purple-600',
+  },
+]
+
+export const INDUSTRIES = [
+  { icon: 'Package', title: 'Logistics & Warehousing', desc: 'End-to-end warehouse security and tracking infrastructure.' },
+  { icon: 'Building2', title: 'Enterprise Offices', desc: 'Smart office IT, surveillance, and access control systems.' },
+  { icon: 'Factory', title: 'Manufacturing', desc: 'Industrial surveillance, server rooms, and production monitoring.' },
+  { icon: 'ShoppingCart', title: 'Retail', desc: 'POS infrastructure, loss prevention, and multi-store connectivity.' },
+  { icon: 'Heart', title: 'Healthcare', desc: 'HIPAA-compliant IT, patient monitoring, and secure data systems.' },
+  { icon: 'Hotel', title: 'Hospitality', desc: 'Hotel-grade surveillance, guest Wi-Fi, and PMS integration.' },
+  { icon: 'GraduationCap', title: 'Education', desc: 'Smart classrooms, campus security, and learning management.' },
+  { icon: 'Zap', title: 'Startups', desc: 'Scalable IT infrastructure from day one, built to grow.' },
+]
+
+export const TECH_STACK = [
+  'Hikvision', 'Dahua', 'Cisco', 'HP', 'Dell', 'Fortinet',
+  'VMware', 'AWS', 'Azure', 'Google Cloud', 'Palo Alto', 'Juniper',
+  'Ubiquiti', 'Aruba', 'Symantec', 'Veeam',
+]
+
+export const TESTIMONIALS = [
+  {
+    name: 'Rajesh Mehta',
+    role: 'CTO, LogiCorp India',
+    text: 'TERAIT transformed our 12-warehouse surveillance infrastructure. Their AI-powered CCTV network has reduced security incidents by 78% and our IT downtime is virtually zero.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Nair',
+    role: 'IT Head, Apollo Healthcare',
+    text: 'The managed IT services from TERAIT are world-class. Their 24/7 NOC team resolves issues before we even notice them. Exceptional partner.',
+    rating: 5,
+  },
+  {
+    name: 'Arun Sharma',
+    role: 'Director, Prestige Hospitality',
+    text: 'We needed a complete IT overhaul across 6 hotels. TERAIT executed flawlessly — surveillance, networking, server management — delivered on time and on budget.',
+    rating: 5,
+  },
+  {
+    name: 'Deepak Verma',
+    role: 'VP Engineering, TechStartup Inc.',
+    text: 'As a fast-growing startup, we needed enterprise-grade IT without enterprise complexity. TERAIT delivered exactly that. Scalable, reliable, and cost-effective.',
+    rating: 5,
+  },
+]
+
+export const BLOG_POSTS = [
+  {
+    id: 1,
+    category: 'CCTV & Surveillance',
+    title: 'AI-Powered CCTV: How Smart Analytics Are Reshaping Enterprise Security in 2025',
+    excerpt: 'Explore how artificial intelligence is transforming CCTV systems from passive recorders to active security intelligence platforms.',
+    date: 'Nov 12, 2024',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  },
+  {
+    id: 2,
+    category: 'Cybersecurity',
+    title: 'Zero Trust Architecture: Why Every Enterprise Needs It Today',
+    excerpt: 'Understanding Zero Trust security models and their critical role in protecting modern enterprise infrastructure.',
+    date: 'Nov 5, 2024',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
+  },
+  {
+    id: 3,
+    category: 'Cloud Infrastructure',
+    title: 'Hybrid Cloud Migration Strategy for Indian Enterprises: A Complete Guide',
+    excerpt: 'A practical framework for enterprises planning their cloud journey with minimal disruption and maximum ROI.',
+    date: 'Oct 28, 2024',
+    readTime: '10 min read',
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+  },
+  {
+    id: 4,
+    category: 'Networking',
+    title: 'SD-WAN vs Traditional WAN: The Right Choice for Multi-Site Enterprises',
+    excerpt: 'A deep dive into SD-WAN technology and how it compares to legacy WAN for cost, performance, and scalability.',
+    date: 'Oct 20, 2024',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+  },
+  {
+    id: 5,
+    category: 'IT Infrastructure',
+    title: 'Building a Future-Proof Data Center: Key Considerations for 2025',
+    excerpt: 'Expert insights on designing data centers that can adapt to evolving workloads, AI demands, and sustainability goals.',
+    date: 'Oct 14, 2024',
+    readTime: '9 min read',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80',
+  },
+  {
+    id: 6,
+    category: 'Smart Surveillance',
+    title: 'Thermal Cameras & Facial Recognition: The Next Frontier of Enterprise Security',
+    excerpt: 'How thermal imaging and AI-driven facial recognition are becoming standard in enterprise surveillance deployments.',
+    date: 'Oct 7, 2024',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?w=800&q=80',
+  },
+]
+
+export const OPEN_POSITIONS = [
+  { title: 'Senior Network Engineer', type: 'Full-time', location: 'Mumbai / Remote', dept: 'Engineering' },
+  { title: 'CCTV Installation Technician', type: 'Full-time', location: 'Delhi NCR', dept: 'Field Operations' },
+  { title: 'Cloud Solutions Architect', type: 'Full-time', location: 'Bengaluru / Remote', dept: 'Cloud' },
+  { title: 'IT Project Manager', type: 'Full-time', location: 'Mumbai', dept: 'Operations' },
+  { title: 'Cybersecurity Analyst', type: 'Full-time', location: 'Remote', dept: 'Security' },
+  { title: 'IT Support Engineer', type: 'Full-time', location: 'Multiple Locations', dept: 'Support' },
+  { title: 'Business Development Executive', type: 'Full-time', location: 'Mumbai / Delhi', dept: 'Sales' },
+  { title: 'Network Intern', type: 'Internship', location: 'Mumbai', dept: 'Engineering' },
+]
