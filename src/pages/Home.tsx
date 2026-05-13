@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from 'react'
+=======
+import { useRef, useState } from 'react'
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
 import type { MouseEvent } from 'react'
 import {
   ArrowRight, Shield, Wifi, Server, Camera, Cloud, ChevronRight,
@@ -30,7 +34,11 @@ function HeroCamera({ pan, tilt }: { pan: number; tilt: number }) {
         muted
         loop
         playsInline
+<<<<<<< HEAD
         preload="metadata"
+=======
+        preload="auto"
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
         poster="/cctv-hero.jpg"
       >
         <source src="/cctv-multi-feed.mp4" type="video/mp4" />
@@ -63,12 +71,16 @@ function HeroCamera({ pan, tilt }: { pan: number; tilt: number }) {
 function HeroSection() {
   const ref = useRef<HTMLElement>(null)
   const [cameraAim, setCameraAim] = useState({ pan: 0, tilt: 0 })
+<<<<<<< HEAD
   const frameRef = useRef<number | null>(null)
   const nextAimRef = useRef({ pan: 0, tilt: 0 })
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], [0, 150])
   const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
 
+<<<<<<< HEAD
   useEffect(() => {
     return () => {
       if (frameRef.current !== null) {
@@ -105,6 +117,17 @@ function HeroSection() {
       onMouseLeave={handlePointerLeave}
       className="relative block min-h-screen overflow-hidden bg-slate-50"
     >
+=======
+  const handlePointerMove = (event: MouseEvent<HTMLElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect()
+    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 100
+    const y = ((event.clientY - rect.top) / rect.height - 0.5) * 100
+    setCameraAim({ pan: Math.max(-45, Math.min(45, x)), tilt: Math.max(-35, Math.min(35, y)) })
+  }
+
+  return (
+    <section ref={ref} onMouseMove={handlePointerMove} className="relative block min-h-screen overflow-hidden bg-slate-50">
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
       <div className="absolute inset-0">
         <HeroCamera pan={cameraAim.pan} tilt={cameraAim.tilt} />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(248,250,252,0.96)_0%,rgba(248,250,252,0.9)_34%,rgba(248,250,252,0.38)_63%,rgba(248,250,252,0.14)_100%)]" />

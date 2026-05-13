@@ -11,13 +11,17 @@
 
   html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   }
 
   body {
     @apply bg-slate-50 text-slate-900 font-body antialiased;
     overflow-x: hidden;
+<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -28,6 +32,8 @@
   textarea,
   button {
     font: inherit;
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   }
 
   ::selection {
@@ -51,6 +57,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   input,
   select,
@@ -59,6 +66,8 @@
   }
 }
 
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
 @layer components {
   .glass {
     @apply bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-sm;
@@ -184,9 +193,12 @@
     height: 100%;
     object-fit: cover;
     transform: scale(1.04);
+<<<<<<< HEAD
     backface-visibility: hidden;
     transform-style: preserve-3d;
     will-change: transform;
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   }
 
   .hero-video-base,
@@ -453,6 +465,7 @@
   height: 400px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(14,165,233,0.06) 0%, transparent 70%);
+<<<<<<< HEAD
   transform: translate3d(-9999px, -9999px, 0);
   z-index: 1;
   will-change: transform;
@@ -495,4 +508,9 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+=======
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: transform 0.1s ease;
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
 }

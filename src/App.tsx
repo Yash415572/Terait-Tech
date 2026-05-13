@@ -1,5 +1,9 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+<<<<<<< HEAD
 import { AnimatePresence, MotionConfig } from 'framer-motion'
+=======
+import { AnimatePresence } from 'framer-motion'
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
 import { Suspense, lazy, useEffect, useState } from 'react'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -38,7 +42,10 @@ function AnimatedRoutes() {
 export default function App() {
   const [loading, setLoading] = useState(true)
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
+<<<<<<< HEAD
   const [performanceLite, setPerformanceLite] = useState(false)
+=======
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2200)
@@ -49,6 +56,7 @@ export default function App() {
     document.documentElement.classList.toggle('dark', theme === 'dark')
   }, [theme])
 
+<<<<<<< HEAD
   useEffect(() => {
     const nav = navigator as Navigator & {
       connection?: { saveData?: boolean }
@@ -86,5 +94,24 @@ export default function App() {
         </div>
       </BrowserRouter>
     </MotionConfig>
+=======
+  if (loading) return <LoadingScreen />
+
+  return (
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <div className={`${theme === 'dark' ? 'site-dark bg-navy-950 text-white' : 'site-light bg-slate-50 text-slate-900'} min-h-screen transition-colors duration-300`}>
+      <CursorGlow />
+      <ScrollProgress />
+      <Navbar theme={theme} onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
+      <main>
+        <Suspense fallback={<div className="min-h-screen bg-slate-50 dark:bg-navy-950 flex items-center justify-center"><div className="w-8 h-8 border-2 border-cyber-blue border-t-transparent rounded-full animate-spin" /></div>}>
+          <AnimatedRoutes />
+        </Suspense>
+      </main>
+      <Footer />
+      <WhatsAppButton />
+      </div>
+    </BrowserRouter>
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   )
 }

@@ -5,6 +5,7 @@ import { COMPANY } from '../../data/company'
 
 export function CursorGlow() {
   const ref = useRef<HTMLDivElement>(null)
+<<<<<<< HEAD
   const rafRef = useRef<number | null>(null)
   const pointRef = useRef({ x: 0, y: 0 })
 
@@ -26,6 +27,18 @@ export function CursorGlow() {
         window.cancelAnimationFrame(rafRef.current)
       }
     }
+=======
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current) {
+        ref.current.style.left = e.clientX + 'px'
+        ref.current.style.top = e.clientY + 'px'
+      }
+    }
+    window.addEventListener('mousemove', handler)
+    return () => window.removeEventListener('mousemove', handler)
+>>>>>>> 47427f3a36ea0a50bd73a0ffbe69a2299023586f
   }, [])
 
   return (
